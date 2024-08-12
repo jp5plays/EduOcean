@@ -3,22 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--dark-blue);
-  
-    
-    
-   
   }
   
   :root {
     --dark-blue: #101728;
     --light-blue: #BCE5E5;
   }
-  
+  .site{
+    width: 1440px;
+    margin: auto;
+    height: 100%;
+  }
   body {
    background-color: var(--dark-blue);
-   max-width: 1440px;
     height: auto;
-    width: 1440px;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1440px;
@@ -32,23 +30,19 @@
     padding: 10px 20px ;
     display: flex;
     align-items: center;
-    gap: 600px;
+    gap:380px
+    
   }
   
   div.logo{
     display: flex;
     align-items: center;
-    margin-bottom: -3rem;
     margin-left: 3rem;
   }
   .navbar {
+  
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display:flex;
-    margin-left: -15rem;
-    margin-bottom: -2.5rem;
+    
   }
   
   .nav-links {
@@ -58,21 +52,14 @@
   
   }
  
-  .nav-links li {
-   
-    display: flex;
-    gap:50px
-  }
   .nav-links li a{
     color: #fff ;
     text-decoration: none;
     font-size: 25px;
   }
 
-  .nav-links li a:hover {
+  .nav-links li a:hover{
     color: white;
-    cursor: pointer;
-    font-size: 20rem;
 }
 
   main {
@@ -91,14 +78,8 @@
   }
   
   .img{
+   margin-left: 200px;
    
-   margin-right: 48rem;
-   padding:2rem;
-   margin-top: 19rem;
-   
-  
-   
-  
   }
   
   .bt{
@@ -109,22 +90,17 @@
   
   }
   
-  .imgb{
-    margin-top: -27rem;
+  .imgs{
+    display: flex;
+    margin-top: -100px;
   }
   
-  .corall{
-    
-    margin-top: -30rem;
-   margin-left: 30rem;
+  .coral{
+    width: 2000000px;
+    height: 150px;
+   margin-left: -550px;
   }
-  #imgc{
-    width: 65rem;
-  }
-  
-  #onda{
-    width: 80rem;
-  }
+ 
   
   #botao{
     background: linear-gradient(to right, #800080, #00FFFF);
