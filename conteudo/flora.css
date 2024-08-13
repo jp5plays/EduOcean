@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--dark-blue);
+
+
+
+  }
+  :root {
+    --dark-blue: #101728;
+    --light-blue: #BCE5E5;
+  }
+
+
+  body{
+    display: grid;
+    flex-direction: column;
+  }
+  .conteiner{
+    max-width: 1440px;
+    margin: 0;
+    height: auto;
+   }
+
+   .barra{
+    width: 200px; 
+    height: 100px; 
+    background-color:var(--light-blue); 
+    border-radius: 30px; 
+    width: 200px;
+    height:100px;
+    
+   }
