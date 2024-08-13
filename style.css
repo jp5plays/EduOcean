@@ -36,7 +36,7 @@
 
   .nav_bar{
    margin-top: 20px;
-   margin-right: 30px;
+   margin-right: 40px;
   }
   .nav_links{
     display: flex;
@@ -51,17 +51,28 @@
 
   }
 
+  .nav_links li a:hover{
+    color: var(--light-blue);
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+
   .linha{
     width: 100%;      
-    height: 2px;       /* Altura da linha (espessura) */
-    background-color: white;  /* Cor da linha */
+    height: 2px;       
+    background-color: white;  
     margin: 20px 0; 
     margin-top: 4px;
   }
+  .bt{
+   margin-left: 75px;
+    margin-top: 8rem;
 
-  .botao{
+  }
+  #botao{
     background: linear-gradient(to right, #800080, #00FFFF);
-   
+    margin-bottom: -50000px;
     border: none; 
     color: black; 
     padding: 15px 30px; 
@@ -74,28 +85,39 @@
     border-radius: 50px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: all 0.3s ease; 
+    width: 250px;
   
   }
-
+  #botao:hover{
+    cursor: pointer;
+    color: white;
+    width: 300px;
+  }
   #ondas{
-    margin-top: -900px;
+    margin-top: -800px;
     width: 100%;
     height: 400px;
-    margin-bottom: 55px;
-    width: 580px;
-    margin-left: 18px;
+    margin-bottom: 130px;
+    width: 550px;
+    margin-left: 25px;
    
     
   }
   #corall{
-    width: 500px;
-    margin-left: 60%;
+    width: 540px;
+    margin-left: 58%;
     margin-top: 25px;
   }
 
  .img h1{
-    margin-top: -380px;
-    margin-left: 110px;
+    margin-top: -460px;
+    margin-left: 100px;
     color: #fff;
     font-size: 100px;
+  }
+
+  #bolinha{
+    margin-left: 78%;
+    width: 300px;
+    margin-top: -145.10px;
   }
