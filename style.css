@@ -12,8 +12,10 @@
   }
   .conteiner{
     max-width: 1440px;
-    margin: auto;
-    height: auto;
+    margin: 0 auto;
+    height: 615px;
+    
+    
   }
   header{
     display: flex;
@@ -28,6 +30,12 @@
   }
   body{
     background-color: var(--dark-blue);
+    
+    
+  }
+
+  main{
+    height: 100vh;
   }
 
   .img img{
