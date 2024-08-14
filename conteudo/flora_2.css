@@ -83,13 +83,13 @@ main{
   .conteudo img{
     width: 350px;
     margin-left: 60px;
-    margin-top: 100px;
+    margin-top: 75px;
   }
 
   #h2{
     color: var(--light-blue);
     margin-left: 200px;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   #h2_2{

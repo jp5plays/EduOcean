@@ -1,0 +1,321 @@
+{
+    "quizzes": [
+        {
+            "title": "Oceano",
+            "icon": "../../assets/images/icon-html.svg",
+            "questions": [
+                {
+                    "question": "Onde está localizada a Fossa das Marianas?",
+                    "options": [
+                        "No Oceano Atlântico",
+                        "No Oceano Índico",
+                        "No Oceano Pacífico",
+                        "No Oceano Ártico"
+                    ],
+                    "answer": "No Oceano Pacífico."
+                },
+                {
+                    "question": "Qual é a profundidade aproximada da Fossa das Marianas?",
+                    "options": [
+                        "3.000 metros",
+                        "6.000 metros",
+                        "8.000 metros",
+                        "11.000 metros"
+                    ],
+                    "answer": "11.000 metros"
+                },
+                {
+                    "question": "Qual é a principal característica da água do oceano?",
+                    "options": [
+                        "Água doce",
+                        "Água salgada",
+                        "Água mineral",
+                        "Água potável"
+                    ],
+                    "answer": "Água salgada"
+                },
+                {
+                    "question": "Qual é a principal função do ciclo da água para os oceanos?",
+                    "options": [
+                        "Reduzir a salinidade dos oceanos",
+                        "Transportar água doce dos rios para os oceanos",
+                        "Aumentar a temperatura da água do mar",
+                        "Melhorar a qualidade da água para consumo humano"
+                    ],
+                    "answer": "Transportar água doce dos rios para os oceanos"
+                },
+                {
+                    "question": "Qual é o principal tipo de planta aquática encontrada em recifes de corais?",
+                    "options": [
+                        "Algas marinhas",
+                        "Musgos de água doce",
+                        "Cactos",
+                        "Samambaias"
+                    ],
+                    "answer": "Algas marinhas"
+                },
+                {
+                    "question": "O que são plantas aquáticas flutuantes e onde são comuns?",
+                    "options": [
+                        "Plantas que crescem apenas em terra firme; comuns em desertos.",
+                        "Plantas que flutuam na superfície da água; comuns em lagoas e pântanos.",
+                        "Plantas que crescem apenas em água salgada; comuns em oceanos profundos.",
+                        "Plantas que não necessitam de água; comuns em regiões áridas."
+                    ],
+                    "answer": "Plantas que flutuam na superfície da água; comuns em lagoas e pântanos."
+                },
+                {
+                    "question": "Qual é um dos principais tipos de poluição encontrada nos oceanos?",
+                    "options": [
+                        "Poluição atmosférica",
+                        "Poluição térmica",
+                        "Poluição plástica",
+                        "Poluição luminosa"
+                    ],
+                    "answer": "Poluição plástica"
+                },
+                {
+                    "question": "Como a poluição do óleo afeta os oceanos?",
+                    "options": [
+                        "Melhora a qualidade da água para a vida marinha",
+                        "Não tem impacto significativo na vida marinha",
+                        "Danifica habitats marinhos e pode ser tóxica para a vida marinha",
+                        "Aumenta a oxigenação da água"
+                    ],
+                    "answer": "Danifica habitats marinhos e pode ser tóxica para a vida marinha"
+                },
+                {
+                    "question": "Qual é um exemplo famoso de uma cidade submersa que é frequentemente mencionada em lendas?",
+                    "options": [
+                        "Atlântida",
+                        "Pompeia",
+                        "Babilônia",
+                        "Roma"
+                    ],
+                    "answer": "Atlântida"
+                },
+                {
+                    "question": "Por que algumas cidades podem estar submersas atualmente?",
+                    "options": [
+                        "Por causa de mudanças climáticas e aumento do nível do mar",
+                        "Porque foram construídas em desertos",
+                        "Devido a atividades vulcânicas em regiões de alta altitude",
+                        "Por causa de poluição atmosférica."
+                    ],
+                    "answer": "Por causa de mudanças climáticas e aumento do nível do mar"
+                }
+            ]
+        },
+        {
+            "title": "Flora Marinha",
+            "icon": "../../assets/images/icon-css.svg",
+            "questions": [
+                {
+                    "question": "O que é flora marinha?",
+                    "options": [
+                        "Plantas que vivem em desertos",
+                        "Plantas que crescem em água doce",
+                        "Plantas e algas que vivem em ambientes marinhos",
+                        "Plantas que crescem apenas em florestas tropicais"
+                    ],
+                    "answer": "Plantas e algas que vivem em ambientes marinhos"
+                },
+                {
+                    "question": "Qual é a principal diferença entre algas e plantas marinhas verdadeiras?",
+                    "options": [
+                        "Algas são plantas com raízes, plantas marinhas não têm raízes.",
+                        "Algas não têm raízes, caules ou folhas verdadeiras, enquanto plantas marinhas têm.",
+                        "Algas crescem apenas em água doce, enquanto plantas marinhas crescem em água salgada.",
+                        "Algas são sempre verdes, enquanto plantas marinhas podem ser de várias cores."
+                    ],
+                    "answer": "Algas não têm raízes, caules ou folhas verdadeiras, enquanto plantas marinhas têm."
+                },
+                {
+                    "question": "Qual é uma das principais funções das plantas marinhas nos ecossistemas marinhos?",
+                    "options": [
+                        "Produzir gases tóxicos",
+                        "Fornecer abrigo e alimento para a vida marinha",
+                        "Reduzir a salinidade da água",
+                        "Bloquear a luz solar"
+                    ],
+                    "answer": "Fornecer abrigo e alimento para a vida marinha"
+                },
+                {
+                    "question": "Como as plantas marinhas ajudam na oxigenação da água?",
+                    "options": [
+                        "Elas liberam dióxido de carbono durante a fotossíntese.",
+                        "Elas consomem oxigênio e produzem dióxido de carbono.",
+                        "Elas produzem oxigênio durante a fotossíntese.",
+                        "Elas reduzem a quantidade de oxigênio na água."
+                    ],
+                    "answer": "Elas produzem oxigênio durante a fotossíntese."
+                },
+                {
+                    "question": "Qual é um exemplo comum de planta marinha que forma grandes áreas subaquáticas?",
+                    "options": [
+                        "Algas verdes",
+                        "Seagrass (gramíneas marinhas)",
+                        "Musgos de água doce",
+                        "Cactos marinhos"
+                    ],
+                    "answer": "Seagrass (gramíneas marinhas)"
+                },
+                {
+                    "question": "Qual é um tipo de alga marinha conhecida por sua importância econômica e culinária?",
+                    "options": [
+                        "Algas verdes",
+                        "Algas vermelhas",
+                        "Algas pardas",
+                        "Algas unicelulares"
+                    ],
+                    "answer": "Algas vermelhas"
+                },
+                {
+                    "question": "Por que a conservação das plantas marinhas é importante?",
+                    "options": [
+                        "Elas ajudam a aumentar a poluição marinha.",
+                        "Elas são essenciais para a saúde dos ecossistemas marinhos e fornecem recursos para muitas espécies.",
+                        "Elas não têm impacto nos ecossistemas marinhos.",
+                        "Elas não têm impacto nos ecossistemas marinhos."
+                    ],
+                    "answer": "Elas são essenciais para a saúde dos ecossistemas marinhos e fornecem recursos para muitas espécies."
+                },
+                {
+                    "question": "Qual é uma prática comum de conservação para proteger as plantas marinhas?",
+                    "options": [
+                        "Reduzir a poluição dos oceanos e regulamentar a pesca",
+                        "Aumentar o uso de produtos químicos no mar",
+                        "Construir mais marinas e portos",
+                        "Remover plantas marinhas para criar áreas de recreação"
+                    ],
+                    "answer": "Reduzir a poluição dos oceanos e regulamentar a pesca"
+                },
+                {
+                    "question": "Qual é uma das principais ameaças às plantas marinhas atualmente?",
+                    "options": [
+                        "Aumento da quantidade de água doce nos oceanos",
+                        "Poluição por nutrientes e produtos químicos",
+                        "Aumento da biodiversidade marinha",
+                        "Redução da temperatura da água do mar"
+                    ],
+                    "answer": "Poluição por nutrientes e produtos químicos"
+                },
+                {
+                    "question": "Como a mudança climática pode afetar as plantas marinhas?",
+                    "options": [
+                        "Aumenta a qualidade da água para as plantas marinhas.",
+                        "Reduz a temperatura da água e melhora a saúde das plantas marinhas.",
+                        "Aumenta a temperatura da água e pode causar o branqueamento e morte das plantas marinhas.",
+                        "Não tem impacto significativo nas plantas marinhas."
+                    ],
+                    "answer": "Aumenta a temperatura da água e pode causar o branqueamento e morte das plantas marinhas."
+                }
+            ]
+        },
+        {
+            "title": "Fauna Marinha",
+            "questions": [
+                {
+                    "question": "O que são níveis tróficos em um ecossistema marinho?",
+                    "options": [
+                        "Diferentes tipos de poluição;",
+                        "Níveis de profundidade no oceano",
+                        "Diferentes posições na cadeia alimentar, como produtores, consumidores e decompositores",
+                        "Tipos de vegetação marinha"
+                    ],
+                    "answer": "Diferentes posições na cadeia alimentar, como produtores, consumidores e decompositores"
+                },
+                {
+                    "question": "Qual é o nível trófico mais baixo na cadeia alimentar marinha?",
+                    "options": [
+                        "Consumidores terciários",
+                        "Produtores primários",
+                        "Decompositores",
+                        "Consumidores secundários"
+                    ],
+                    "answer": "Produtores primários"
+                },
+                {
+                    "question": "Qual dos seguintes é um exemplo de produtor na cadeia alimentar marinha?",
+                    "options": [
+                        "Tubarão",
+                        "Alga marinha",
+                        "Polvo",
+                        "Peixe-preguiça"
+                    ],
+                    "answer": "Alga marinha"
+                },
+                {
+                    "question": "O que são decompositores e qual é seu papel na cadeia alimentar marinha?",
+                    "options": [
+                        "Animais que produzem seu próprio alimento",
+                        "Organismos que consomem outros organismos vivos",
+                        "Organismos que quebram matéria orgânica morta e reciclam nutrientes",
+                        "Organismos que são consumidos por predadores"
+                    ],
+                    "answer": "Organismos que quebram matéria orgânica morta e reciclam nutrientes"
+                },
+                  {
+                    "question": "Qual é o papel das bactérias na cadeia alimentar marinha?",
+                    "options": [
+                        "Elas são produtores primários",
+                        "Elas são consumidores terciários",
+                        "Elas ajudam a decompor matéria orgânica e reciclá-la para outros organismos",
+                        "Elas são predadores de algas marinhas"
+                    ],
+                    "answer": "Elas ajudam a decompor matéria orgânica e reciclá-la para outros organismos"
+                },
+                {
+                    "question": "Em uma cadeia alimentar marinha, qual animal geralmente ocupa o papel de consumidor secundário?",
+                    "options": [
+                      "Plâncton",
+                      "Peixe pequeno que se alimenta de plâncton",
+                      "Tubarão que se alimenta de peixes menores",
+                      "Alga marinha"
+                    ],
+                    "answer": "Tubarão que se alimenta de peixes menores"
+                },
+                {
+                    "question": "Qual é um exemplo de carnívoro marinho?",
+                    "options": [
+                        "Foca",
+                        "Estrela-do-mar",
+                        "Sardinha",
+                        "Alga marinha"
+                    ],
+                    "answer": "Foca"
+                },
+                {
+                    "question": "Qual animal marinho é conhecido por ser onívoro?",
+                    "options": [
+                        "Tubarão branco",
+                        "Polvo",
+                        "Medusa",
+                        "Cavalo-marinho"
+                    ],
+                    "answer": "Polvo"
+                },
+                {
+                    "question": "Qual é um exemplo de mamífero marinho?",
+                    "options": [
+                        "Tubarão",
+                        "Medusa",
+                        "Baleia",
+                        "Polvo"
+                    ],
+                    "answer": "Baleia"
+                },
+                {
+                    "question": "Qual foi uma das primeiras descobertas importantes sobre a fauna marinha?",
+                    "options": [
+                        "A descoberta do uso de tecnologia submarina para estudo marinho",
+                        "A identificação dos recifes de corais como habitats críticos",
+                        "A descoberta de espécies marinhas por exploradores no século XVII",
+                        "A construção de aquários para estudo de fauna marinha"
+                    ],
+                    "answer": "A descoberta de espécies marinhas por exploradores no século XVII"
+                }
+            ]
+        }
+    ]
+}

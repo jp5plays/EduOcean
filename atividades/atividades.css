@@ -1,11 +1,164 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--dark-blue);
+    font-family: "Rubik", sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--dark-blue);
 }
 
 :root {
     --dark-blue: #101728;
     --light-blue: #BCE5E5;
+    --shadow: #363636;
+}
+
+.geral {
+    max-width: 1140px;
+    margin: 0;
+    height: auto;
+}
+
+.boas_vindas {
+    color: var(--light-blue);
+    margin-left: 4rem;
+}
+
+body{
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img{
+    width: 300px;
+    margin-left: 2rem;
+    padding: -2rem;
+}
+
+main{
+    padding: 32px 24px;
+}
+
+
+
+.boas_vindas{
+    margin-bottom: 40px;
+}
+
+.boas_vindas h1{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom:16px ;
+}
+
+.boas_vindas h1 strong{
+    font-weight: 500;
+}
+
+.boas_vindas p{
+    font-size: 14px;
+    line-height: 150%;
+    font-style: italic;
+}
+
+.botao_o {
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.botao_o a{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.botao_flo {
+    background-color: var(--light-blue);
+    border: none;
+    border-radius:10px ;
+}
+
+.botao_flo a{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.botao_fa {
+    background-color: var(--light-blue);
+    border: none;
+    border-radius:10px ;
+
+}
+
+.botao_fa a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.assuntos{
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.assuntos a {
+    width: 800px;
+    height: 50px;
+    text-decoration: none;
+    background-color: var(--light-blue);
+}
+
+.assuntos button img{
+    width: 100%;
+}
+
+@media(min-width:1100px){
+    body{
+        background: var(--bg-desktop) var(--bg-color);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    header{
+        margin-block:81px;
+    }
+
+    main{
+        display: flex;
+        max-width: 1160px;
+        margin-inline: auto;
+
+    }
+
+    section{
+        width:100%;
+    }
+
+    .boas_vindas h1{
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+
+    .boas_vindas p{
+        font-size: 20px;
+    }
+
+    .assuntos{
+        gap:24px
+    }
+
+    .assuntos button{
+        font-size: 28px;
+        padding: 20px;
+        gap: 32px;
+    }
+
+    .assuntos button div{
+        width: 300px;
+        height: 56px;
+        padding: 8px;
+    }
 }
