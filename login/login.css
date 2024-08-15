@@ -2,10 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--dark-blue);
+    font-family: "Rubik", sans-serif; 
+    background-color: var(--dark-blue);
   }
 
   :root {
     --dark-blue: #101728;
     --light-blue: #BCE5E5;
   }
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita > h1 {
+    color: white;
+    font-size: 15px;
+}
+
+.dados > input {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    background-color: #00273b;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.botao {
+    width: 50px;
+}
+
+button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    background-color: #7C5CBF;
+    color: white;
+    width: 284px;
+    height: 53px;
+    font-family: lexenddeca;
+    font-size: 20px;
+}
