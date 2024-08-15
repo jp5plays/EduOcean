@@ -10,13 +10,17 @@
 :root {
     --dark-blue: #101728;
     --light-blue: #BCE5E5;
+    --green: #0ac723 ;
+    --vermei: #c70a0a;
     --shadow: #363636;
 }
+
+
 
 .geral {
     max-width: 1140px;
     margin: 0;
-    height: auto;
+    height: 100svh;
 }
 
 .boas_vindas {

@@ -62,6 +62,7 @@ main{
     width: 140px;
     height: 80px;
     border-radius: 20px;
+    background-color: 2px;
     background-color: var(--dark-blue);
   }
 
@@ -80,91 +81,21 @@ main{
   }
 
   .conteudo img{
-    height:140px ;
-    width: 280px;
+    width: 300px;
     margin-left: 60px;
-    margin-top: 68px;
-  }
-
-  .texto img{
-    height:140px ;
-    width: 280px;
-    margin-left: 60px;
-    margin-top: 68px;
+    margin-top: 80px;
   }
 
   #h2{
     color: var(--light-blue);
     margin-left: 200px;
-    margin-top: 150px;
+    margin-top: 60px;
   }
 
-  #h2_2{
-    color: var(--light-blue);
-    margin-left: 200px;
-    margin-top: 80px;
-  }
 
   #t{
     color: var(--light-blue);
     margin-top: 50px ;
     margin-left: 60px;
     text-transform: uppercase;
-  }
-  #a{
-    height: 180px;
-    margin-top: 100px;
-    margin-left: -350px;
-  }
- #b{
-   margin-top:-40px;
-   height: 180px;
-
-
- }
-  #c{
-    margin-left: -285px;
-    margin-bottom: -400px;
-    height: 180px;
-
-  }
-
-  ee{
-    width: 300px;
-    height: 100px;
-    background-color: var(--light-blue);
-    margin-top:330px;
-    border: none;
-    margin-left: -1px;
-  }
-
-  #eee{
-    width: 1312px;
-    height: 120px;
-    background: var(--light-blue);
-    margin-top:215px;
-    border: none;
-    margin-left: -23.522px;
-    margin-bottom: -110px;
-    border-radius: 10px;
-   
-  }
-
-  #algo{
-    margin-top: 20px;
-    margin-left: 80px;
-    color: var(--light-blue);
-    margin-bottom: -130px;
-  }
-
-  #eee h2{
-    margin-left: 500px;
-    margin-top: -130px;
-    
-  }
-
-  #h22{
-    color: var(--light-blue);
-    margin-top: 200px;
-    margin-left: 80px;
   }

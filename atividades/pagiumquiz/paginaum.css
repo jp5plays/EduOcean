@@ -10,78 +10,72 @@
 :root {
     --dark-blue: #101728;
     --light-blue: #BCE5E5;
-    --green: #0ac723;
+    --vermei: #c70a0a;
+    --green: #149410;
+    --gre: #97fcfc;
+    --shadow: #8da2b6;
+    --white: #f4f4f4;
+}
+
+.geral {
+    max-width: 1140px;
+    margin: 0;
+    height: 100svh;
+}
+
+.boas_vindas {
+    color: var(--light-blue);
+    margin-left: 4rem;
 }
 
 body{
-    height: 100svh;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    
-}
-
-header{
-    display:flex;
-}
-.assunto{
-    display:flex;
-    align-items: center;
-    gap: 16px;
-}
-.assunto h1{
-    font-size:18px;
-    font-weight: 500px;
-    color: var(--light-blue);
 }
 
 .logo img{
-   width: 200px;
-   margin-right: 2rem;
-}
-
-.logo {
-    padding: 2rem;
+    width: 300px;
+    margin-left: 2rem;
+    padding: -2rem;
 }
 
 main{
     padding: 32px 24px;
-   
 }
 
+
+.logo img{
+    margin-top: -220px;
+   margin-right: 2rem;
+}
+
+
+.alternativas form div{
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+}
 .pergunta{
-    margin-bottom: 40px;
+    margin-top: -100px;
 }
 
 .pergunta p{
+    margin-top: 100px;
     font-style: italic;
     font-size: 14px;
     color: var(--light-blue);
-    margin-bottom: 12px;
 }
 
 .pergunta h2{
+    margin-top: -320px;
     font-size:20px;
     font-weight: 500;
-    color: var(--primary-text-color);
+    color: var(--light-blue);
     line-height: 24px;
-    margin-bottom: 24px;
 }
-
-.barra_progresso{
-    background: var(--button-bg);
-    height: 16px;
-    padding: 4px;
-    border-radius: 999px;
+.alternativas{
+    margin-top: -100px;
 }
-
-.barra_progresso div{
-    height: 100%;
-    background: var(--purple);
-    border-radius: 999px;
-}
-
-
-
 .alternativas form{
     display: flex;
     flex-direction: column;
@@ -91,30 +85,30 @@ main{
 
 .alternativas label{
     display: block;
-    background: var(--button-bg);
+    background: var(--light-blue);
     padding: 12px;
     font-size: 18px;
     font-weight: 500;
     border-radius: 12px;
     box-shadow: var(--shadow);
-    color: var(--primary-text-color);
+    color: var(--light-blue);
     cursor: pointer;
 
 }
 
 .alternativas label:hover{
     & span{
-        background: var(--bg-acessibilidade);
-        color: var(--purple);
+        background: var(--shadow);
+        color: var(--dark-blue);
     }
 }
 
 .alternativas label:has(input:checked){
-    outline: 3px solid var(--purple);
+    outline: 3px solid var(--shadow);
 
     & span {
-        background: var(--purple);
-        color:var(--white) ;
+        background: var(--shadow);
+        color:var(--dark-blue) ;
     }
 
 }
@@ -124,17 +118,17 @@ main{
 
     & span {
         background: var(--green);
-        color: var(--white);
+        color: var(--light-blue);
     }
 
 }
 
 .alternativas label#errada{
-    outline: 3px solid var(--red);
+    outline: 3px solid var(--vermei);
 
     & span {
-        background: var(--red);
-        color: var(--white);
+        background: var(--vermei);
+        color: var(--light-blue);
     }
 
 }
@@ -143,6 +137,7 @@ main{
 .alternativas input {
     display: none;
 }
+
 .alternativas div{
     display:flex;
     align-items: center;
@@ -154,9 +149,9 @@ main{
     display:block;
     width: 40px;
     height: 40px;
-    background:var(--bg-span);
+    background:var(--white);
     border-radius: 5px;
-    color: var(--color-span);
+    color: var(--dark-blue);
 
     display:flex;
     align-items: center;
@@ -169,8 +164,8 @@ main{
     padding: 16px;
     border-radius: 12px;
     border: none;
-    background: var(--purple);
-    color: var(--white);
+    background: var(--light-blue);
+    color: var(--shadow);
     width: 100%;
     
     font-size: 18px;
@@ -179,7 +174,7 @@ main{
 }
 
 .alternativas button:hover{
-    background: var(--purple-hover);
+    background: var(--gre);
     cursor: pointer;
     
 }
@@ -187,7 +182,7 @@ main{
 @media(min-width:1100px){
 
     body{
-        background: var(--bg-desktop) var(--bg-color); 
+        background: var(--) var(--); 
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -209,11 +204,11 @@ main{
     }
 
     main{
-        max-width: 1160px;
+        max-width: 1140px;
         margin-inline: auto;
 
         display:flex;
-        gap: 130px;
+        gap: 30px;
     }
 
     section{
