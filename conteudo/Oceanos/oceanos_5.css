@@ -139,14 +139,14 @@ main{
   }
 
   #eee{
-    width: 1312px;
+    width: 1250px;
     height: 120px;
     background: var(--light-blue);
     margin-top:215px;
     border: none;
-    margin-left: -23.522px;
+    margin-left: -1px;
     margin-bottom: -110px;
-    border-radius: 10px;
+    border-end-end-radius: 10px;
    
   }
 
@@ -166,5 +166,15 @@ main{
   #h22{
     color: var(--light-blue);
     margin-top: 200px;
-    margin-left: 80px;
+    margin-left: 65px;
   }
+  #AA{
+    margin-left: 95%;
+    text-decoration: none;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 12px 24px;
+    border-radius: 10px;
+   
+   
+   }
