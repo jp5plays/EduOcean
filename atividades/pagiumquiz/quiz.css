@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    background-color: var(--dark-blue);
+    -webkit-font-smoothing: antialiased; 
 }
+
+
 
 :root {
     --dark-blue: #101728;
@@ -15,12 +16,78 @@
     --gre: #97fcfc;
     --shadow: #8da2b6;
     --white: #f4f4f4;
+    --purple:#a729f5;
 }
 
-.geral {
-    max-width: 1140px;
-    margin: 0;
-    height: 100svh;
+body.escuro{
+    --dark-blue: #BCE5E5;
+    --light-blue: #101728 ;
+    --bg-color:#313e51;
+    --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
+    --bg-desktop:url(./assets/images/pattern-background-desktop-dark.svg);
+    --primary-text-color: #fff;
+    --secondary-text-color:#abc1e1;
+    --button-bg:#3b4d66;
+    --shadow:0px 16px 40px 0px rgba(49,62,81,0.14);
+    --white:#101728;
+
+}
+
+
+header{
+    height:84px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1160px;
+    margin-inline: auto;
+    }
+
+body{
+   height: 1000shv;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   background-color: var(--dark-blue);
+   
+
+}
+
+main{
+    margin-top: -60px;
+}
+
+.tema{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tema img{
+    width: 16px;
+}
+
+.tema button{
+    margin-top: -40px;
+    height: 20px;
+    width: 32px;
+    background: var(--purple);
+    border: 0;
+    border-radius: 999px;
+    padding: 4px;
+    display: flex;
+    cursor: pointer;
+    
+    
+}
+
+.tema button div{
+    background: var(--white);
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    display: flex;
 }
 
 .boas_vindas {
@@ -28,11 +95,7 @@
     margin-left: 4rem;
 }
 
-body{
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .logo img{
     width: 300px;
@@ -66,15 +129,21 @@ main{
     color: var(--light-blue);
 }
 
+#t{
+    font-size: 50px;
+    margin-bottom: 300px;
+    line-height: 50px;
+}
+
 .pergunta h2{
-    margin-top: -320px;
-    font-size:20px;
-    font-weight: 500;
+    margin-bottom: 300px;
+    font-size:80px;
+    font-weight: 500px;
     color: var(--light-blue);
-    line-height: 24px;
+   
 }
 .alternativas{
-    margin-top: -100px;
+    margin-top: -80px;
 }
 .alternativas form{
     display: flex;
@@ -104,16 +173,16 @@ main{
 }
 
 .alternativas label:has(input:checked){
-    outline: 3px solid var(--shadow);
+    outline: 3px solid var(--purple);
 
     & span {
-        background: var(--shadow);
+        background: var(--purple);
         color:var(--dark-blue) ;
     }
 
 }
 
-.alternativas label#correta{
+.alternativas label #correta{
     outline: 3px solid var(--green);
 
     & span {
@@ -123,7 +192,7 @@ main{
 
 }
 
-.alternativas label#errada{
+.alternativas label #errada{
     outline: 3px solid var(--vermei);
 
     & span {
@@ -150,7 +219,7 @@ main{
     width: 40px;
     height: 40px;
     background:var(--white);
-    border-radius: 5px;
+    border-radius: 999px;
     color: var(--dark-blue);
 
     display:flex;
@@ -164,10 +233,9 @@ main{
     padding: 16px;
     border-radius: 12px;
     border: none;
-    background: var(--light-blue);
-    color: var(--shadow);
+    background: var(--purple);
+    color: var(--dark-blue);
     width: 100%;
-    
     font-size: 18px;
     font-weight: 500;
     transition: background 0.3s;
@@ -177,6 +245,30 @@ main{
     background: var(--gre);
     cursor: pointer;
     
+}
+
+div[data-valor="certa"] {
+    background-color: green;
+    
+  }
+
+.prog{
+    display: flex;
+    margin-top: -110px;
+    justify-content: space-between;
+    margin-left: -40px;
+   
+    
+}
+
+.b{
+    justify-content: space-between;
+    margin-left: 0;
+    width: 35px; /* Largura da bolinha */
+    height: 35px; /* Altura da bolinha */
+    background-color:silver; /* Cor de fundo (azul) */
+    border-radius: 50%; 
+    border: 1px solid black;
 }
 
 @media(min-width:1100px){

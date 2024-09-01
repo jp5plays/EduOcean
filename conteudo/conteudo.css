@@ -16,8 +16,12 @@
 
   body {
     background-color: var(--dark-blue);
-     display: grid;    
-   }
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
 
    .conteiner{
     max-width: 1440px;
@@ -31,6 +35,8 @@
     align-items: center;
     text-align: center;
     margin-top: -20px;
+
+    
   }
 
   .ret {
