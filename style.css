@@ -11,9 +11,12 @@
     --light-blue: #BCE5E5;
   }
   .conteiner{
-    max-width: 1440px;
+    max-width:1440px;
     margin: 0 auto;
     height:100%;
+    display: flex;
+    margin-inline: auto;
+
     
     
   }
@@ -44,6 +47,11 @@
     margin: 0 auto;
   }
 
+  .img {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
   .img img{
     padding: none;
     padding-bottom: none;
@@ -51,7 +59,9 @@
 
   .nav_bar{
    margin-top: 20px;
-   margin-right: 50px;
+   margin-right: 70px;
+   
+
   }
   .nav_links{
     display: flex;

@@ -182,7 +182,7 @@ main{
 
 }
 
-.alternativas label #correta{
+.alternativas label#correta{
     outline: 3px solid var(--green);
 
     & span {
@@ -192,7 +192,7 @@ main{
 
 }
 
-.alternativas label #errada{
+.alternativas label#errada{
     outline: 3px solid var(--vermei);
 
     & span {
@@ -201,6 +201,14 @@ main{
     }
 
 }
+
+.alternativas div #errada{
+    background: var(--green);
+       
+    
+
+}
+
 
 
 .alternativas input {
