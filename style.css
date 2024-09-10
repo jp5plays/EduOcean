@@ -35,8 +35,7 @@
   body{
     position: relative;
     min-height: 100vh;
-    margin: 0;;
-   
+    margin: 0;
     background-color: var(--dark-blue);
     
     
@@ -157,4 +156,6 @@
   #divizinha{
     height: calc(100vh - 84px);
     margin: 0 auto;
+    margin-inline: auto;
+   
   }

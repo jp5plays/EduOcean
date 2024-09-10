@@ -260,7 +260,7 @@ div[data-valor="certa"] {
     
   }
 
-.bolinhas-container{
+bolinhas-container{
     display: flex;
     margin-top: -110px;
     justify-content: space-between;
@@ -269,7 +269,7 @@ div[data-valor="certa"] {
     
 }
 
-.bolinha{
+bolinha{
     justify-content: space-between;
     margin-left: 0;
     width: 35px; /* Largura da bolinha */
@@ -277,6 +277,7 @@ div[data-valor="certa"] {
     background-color:silver; /* Cor de fundo (azul) */
     border-radius: 50%; 
     border: 1px solid black;
+    display: flex;
 }
 .verde {
     background-color: green;
