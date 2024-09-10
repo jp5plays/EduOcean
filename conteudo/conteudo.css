@@ -27,6 +27,8 @@
     max-width: 1440px;
     margin: 0;
     height: auto;
+    margin-inline: auto;
+    
    }
   main{
     display: flex;
@@ -35,6 +37,7 @@
     align-items: center;
     text-align: center;
     margin-top: -20px;
+    margin-inline: auto;
 
     
   }
@@ -48,14 +51,12 @@
     height: 480px;
     margin-top: 1rem;
     
-    
 
 }
 
 .ret1{
    
-    width: 200px;  /* largura do retângulo */
-    height: 100px; /* altura do retângulo */
+  
     background-color:var(--light-blue); /* cor de fundo do retângulo */
     border-radius: 30px; /* cantos arredondados (opcional) */
     width: 350px;

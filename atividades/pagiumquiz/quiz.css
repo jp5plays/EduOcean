@@ -260,7 +260,7 @@ div[data-valor="certa"] {
     
   }
 
-.prog{
+.bolinhas-container{
     display: flex;
     margin-top: -110px;
     justify-content: space-between;
@@ -269,7 +269,7 @@ div[data-valor="certa"] {
     
 }
 
-.b{
+.bolinha{
     justify-content: space-between;
     margin-left: 0;
     width: 35px; /* Largura da bolinha */
@@ -278,7 +278,13 @@ div[data-valor="certa"] {
     border-radius: 50%; 
     border: 1px solid black;
 }
+.verde {
+    background-color: green;
+}
 
+.vermelha {
+    background-color: red;
+}
 @media(min-width:1100px){
 
     body{

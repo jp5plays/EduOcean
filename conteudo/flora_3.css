@@ -120,6 +120,7 @@ height: 100svh;
     height: 180px;
     margin-bottom: 100px;
     margin-left: 800px;
+    margin-top: -50px;
    
   }
  #b{
@@ -129,8 +130,8 @@ height: 100svh;
 
  }
   #c{
-    margin-left: -285px;
-    margin-bottom: -400px;
+    margin-left: -500px;
+    margin-bottom: -350px;
     height: 180px;
 
   }
@@ -141,9 +142,9 @@ height: 100svh;
     height: 110px;
     background: var(--light-blue);
     border: none;
-    
+    margin-left: -1px;
     margin-bottom: -110px;
-    border-radius: 10px;
+    border-end-end-radius: 10px;
    
   }
 
