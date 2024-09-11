@@ -260,16 +260,17 @@ div[data-valor="certa"] {
     
   }
 
-bolinhas-container{
+.bolinhas-container{
     display: flex;
-    margin-top: -110px;
+    margin-top: 500px ;
     justify-content: space-between;
-    margin-left: -40px;
+    gap: 20px;
+    position: absolute;
    
     
 }
 
-bolinha{
+.bolinha{
     justify-content: space-between;
     margin-left: 0;
     width: 35px; /* Largura da bolinha */
