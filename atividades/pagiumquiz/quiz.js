@@ -10,7 +10,6 @@ let pergunta = 1;
 let resposta = "";
 let idInputResposta = "";
 let respostaCorretaId = "";
-let estadoBolinhas = []; // Array para armazenar o estado das respostas (verde ou vermelha)
 
 botaoTema.addEventListener("click", () => {
     trocarTema(body, botaoTema);
@@ -24,12 +23,16 @@ async function buscarPerguntas() {
         const resposta = await fetch(urlDados);
         const dados = await resposta.json();
         
+        // Debug: Verifique se o JSON está correto
+        console.log(dados);
+        
+        // Encontrar o quiz com base no assunto
         quiz = dados.quizzes.find(dado => dado.title === assunto);
         
+        // Debug: Verifique se o assunto foi encontrado
         if (quiz) {
             console.log("Quiz encontrado:", quiz);
-            // Inicializar o array estadoBolinhas com null (nenhuma resposta)
-            estadoBolinhas = Array(quiz.questions.length).fill(null);
+            quiz.questions.forEach(q => q.respostaCerta = null); // Inicializa o status das respostas
         } else {
             console.error("Assunto não encontrado:", assunto);
         }
@@ -52,11 +55,6 @@ function montarPergunta() {
             <p>Questão ${pergunta} de ${quiz.questions.length}</p>
             <h2 id="t">${perguntaAtual.question}</h2>
             <section></section>
-            <div class="bolinhas-container">
-                ${Array.from({ length: quiz.questions.length }, (_, i) => `
-                    <div class="bolinha ${estadoBolinhas[i] ? estadoBolinhas[i] : ''}" data-id="${i + 1}"></div>
-                `).join('')}
-            </div>
         </section>
         <section class="alternativas">
             <form action="">
@@ -74,7 +72,17 @@ function montarPergunta() {
         </section>
     `;
 
+    if (!document.querySelector('.bolinhas-container')) {
+        const bolinhasContainer = document.createElement('div');
+        bolinhasContainer.classList.add('bolinhas-container');
+        bolinhasContainer.innerHTML = Array.from({ length: quiz.questions.length }, (_, i) => `
+            <div class="bolinha" data-id="${i + 1}"></div>
+        `).join('');
+        main.querySelector(".pergunta").appendChild(bolinhasContainer);
+    }
+
     adicionarEventoInputs();
+    atualizarBolinhas(); // Garantir que as bolinhas mantenham as cores
 }
 
 function guardarResposta(evento) {
@@ -91,18 +99,18 @@ function validarResposta() {
     botaoEnviar.addEventListener("click", pergunta === quiz.questions.length ? finalizar : proximaPergunta);
 
     const perguntaAtual = quiz.questions[pergunta - 1];
+    
     if (resposta === perguntaAtual.answer) {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta");
         pontos += 1;
-        estadoBolinhas[pergunta - 1] = 'verde';  // Armazenar a resposta correta
+        quiz.questions[pergunta - 1].respostaCerta = true; // Marca a resposta como correta
     } else {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "errada");
         document.querySelector(`label[for='${respostaCorretaId}']`).setAttribute("id", "correta");
-        estadoBolinhas[pergunta - 1] = 'vermelha';  // Armazenar a resposta incorreta
+        quiz.questions[pergunta - 1].respostaCerta = false; // Marca a resposta como errada
     }
 
-    // Atualizar bolinhas após a validação da resposta
-    atualizarBolinhas();
+    atualizarBolinhas(); // Atualiza as cores das bolinhas após a resposta ser validada
 }
 
 function atualizarBolinhas() {
@@ -110,15 +118,11 @@ function atualizarBolinhas() {
     bolinhas.forEach((bolinha, index) => {
         bolinha.classList.remove('verde', 'vermelha');
 
-        // Adicionando logs para depurar
-        console.log(`Index: ${index + 1}, Pergunta: ${pergunta}, Resposta correta: ${quiz.questions[index].answer}`);
-
-        if (index + 1 === pergunta) {
-            if (resposta === quiz.questions[index].answer) {
-                bolinha.classList.add('verde');
-            } else if (idInputResposta && resposta !== quiz.questions[index].answer) {
-                bolinha.classList.add('vermelha');
-            }
+        // Mantém as cores das bolinhas anteriores
+        if (quiz.questions[index].respostaCerta === true) {
+            bolinha.classList.add('verde');
+        } else if (quiz.questions[index].respostaCerta === false) {
+            bolinha.classList.add('vermelha');
         }
     });
 }
@@ -154,10 +158,5 @@ async function iniciar() {
 }
 
 iniciar();
-
-
-
-
-
 
 
