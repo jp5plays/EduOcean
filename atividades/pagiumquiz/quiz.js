@@ -110,8 +110,15 @@ function atualizarBolinhas() {
     bolinhas.forEach((bolinha, index) => {
         bolinha.classList.remove('verde', 'vermelha');
 
-        if (estadoBolinhas[index]) {
-            bolinha.classList.add(estadoBolinhas[index]);
+        // Adicionando logs para depurar
+        console.log(`Index: ${index + 1}, Pergunta: ${pergunta}, Resposta correta: ${quiz.questions[index].answer}`);
+
+        if (index + 1 === pergunta) {
+            if (resposta === quiz.questions[index].answer) {
+                bolinha.classList.add('verde');
+            } else if (idInputResposta && resposta !== quiz.questions[index].answer) {
+                bolinha.classList.add('vermelha');
+            }
         }
     });
 }
