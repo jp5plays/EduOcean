@@ -10,6 +10,7 @@ let pergunta = 1;
 let resposta = "";
 let idInputResposta = "";
 let respostaCorretaId = "";
+let estadoBolinhas = []; // Array para armazenar o estado das respostas (verde ou vermelha)
 
 botaoTema.addEventListener("click", () => {
     trocarTema(body, botaoTema);
@@ -23,15 +24,12 @@ async function buscarPerguntas() {
         const resposta = await fetch(urlDados);
         const dados = await resposta.json();
         
-        // Debug: Verifique se o JSON está correto
-        console.log(dados);
-        
-        // Encontrar o quiz com base no assunto
         quiz = dados.quizzes.find(dado => dado.title === assunto);
         
-        // Debug: Verifique se o assunto foi encontrado
         if (quiz) {
             console.log("Quiz encontrado:", quiz);
+            // Inicializar o array estadoBolinhas com null (nenhuma resposta)
+            estadoBolinhas = Array(quiz.questions.length).fill(null);
         } else {
             console.error("Assunto não encontrado:", assunto);
         }
@@ -55,7 +53,9 @@ function montarPergunta() {
             <h2 id="t">${perguntaAtual.question}</h2>
             <section></section>
             <div class="bolinhas-container">
-                ${Array.from({ length: quiz.questions.length }, (_, i) => `<div class="bolinha" data-id="${i + 1}"></div>`).join('')}
+                ${Array.from({ length: quiz.questions.length }, (_, i) => `
+                    <div class="bolinha ${estadoBolinhas[i] ? estadoBolinhas[i] : ''}" data-id="${i + 1}"></div>
+                `).join('')}
             </div>
         </section>
         <section class="alternativas">
@@ -94,9 +94,11 @@ function validarResposta() {
     if (resposta === perguntaAtual.answer) {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta");
         pontos += 1;
+        estadoBolinhas[pergunta - 1] = 'verde';  // Armazenar a resposta correta
     } else {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "errada");
         document.querySelector(`label[for='${respostaCorretaId}']`).setAttribute("id", "correta");
+        estadoBolinhas[pergunta - 1] = 'vermelha';  // Armazenar a resposta incorreta
     }
 
     atualizarBolinhas();
@@ -107,12 +109,8 @@ function atualizarBolinhas() {
     bolinhas.forEach((bolinha, index) => {
         bolinha.classList.remove('verde', 'vermelha');
 
-        if (index + 1 === pergunta) {
-            if (resposta === quiz.questions[index].answer) {
-                bolinha.classList.add('verde');
-            } else if (idInputResposta && resposta !== quiz.questions[index].answer) {
-                bolinha.classList.add('vermelha');
-            }
+        if (estadoBolinhas[index]) {
+            bolinha.classList.add(estadoBolinhas[index]);
         }
     });
 }
