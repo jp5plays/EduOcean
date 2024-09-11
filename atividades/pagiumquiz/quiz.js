@@ -101,6 +101,7 @@ function validarResposta() {
         estadoBolinhas[pergunta - 1] = 'vermelha';  // Armazenar a resposta incorreta
     }
 
+    // Atualizar bolinhas após a validação da resposta
     atualizarBolinhas();
 }
 
@@ -146,6 +147,7 @@ async function iniciar() {
 }
 
 iniciar();
+
 
 
 
