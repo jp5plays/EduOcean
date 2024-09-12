@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Rubik", sans-serif; 
+    font-family: "Lexend Deca", sans-serif;
     background-color: var(--dark-blue);
   }
 
@@ -22,16 +22,26 @@ main {
 
 .direita > h1 {
     color: white;
-    font-size: 15px;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    margin-top: -100px;
+    padding-bottom: 50px;
 }
 
 .dados > input {
+    height: 60px;
     width: 100%;
     border: none;
     padding: 15px;
     margin-bottom: 10px;
     border: 2px solid white;
     background-color: #00273b;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 20px;
+
 }
 
 input::placeholder {
@@ -44,16 +54,27 @@ input::placeholder {
 }
 
 button {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: none;
-    border: none;
-    cursor: pointer;
-    background-color: #7C5CBF;
-    color: white;
-    width: 284px;
-    height: 53px;
-    font-family: lexenddeca;
-    font-size: 20px;
+   
+    border: none; 
+    color: var(--dark-blue); 
+    text-align: center; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;  
+    cursor: pointer;  
+    background-color: var(--light-blue);
+    margin-top: 65px;
+    border-radius: 20px;
+    width:340px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

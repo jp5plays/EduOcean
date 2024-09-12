@@ -28,7 +28,8 @@
 }
 
 body.escuro{
-    --light-blue:#BCE5E5;
+    --dark-blue: #BCE5E5;
+    --light-blue: #101728 ;
     --bg-color:#313e51;
     --color-span:#313e51;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
@@ -42,7 +43,7 @@ body.escuro{
 
 body{
     height: 100svh;
-    background: var(--light-blue) ;
+    background-color: var(--light-blue);
     background-repeat: no-repeat;
     background-size: cover;
 }

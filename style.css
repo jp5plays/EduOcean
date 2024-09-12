@@ -15,7 +15,9 @@
     margin: 0 auto;
     height:100%;
     display: flex;
-    margin-inline: auto;
+    display: flex;
+    flex-direction: row; /* Ou 'column' em telas menores */
+    justify-content: space-between;
 
     
     
@@ -28,7 +30,8 @@
   }
 
   header img{
-    margin-left: 50px;
+    margin-left: 150px;
+    
   
 
   }
@@ -157,5 +160,6 @@
     height: calc(100vh - 84px);
     margin: 0 auto;
     margin-inline: auto;
+   
    
   }

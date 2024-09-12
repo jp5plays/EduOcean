@@ -16,4 +16,24 @@ function login() {
       errorMessage.textContent = 'Usuário ou senha incorretos.';
     }
   }
+
+  function validarFormulario() {
+    var campos = document.querySelectorAll('.dados input');
+    var mensagemErro = '';
+  
+    for (var i = 0; i < campos.length; i++) {
+      if (campos[i].value === '') {
+        mensagemErro += 'O campo ' + campos[i].getAttribute('name') + ' é obrigatório.<br>';
+      }
+    }
+  
+    if (mensagemErro !== '') {
+      document.getElementById('mensagem-erro').innerHTML = mensagemErro;
+      document.getElementById('mensagem-erro').style.color = 'red';
+    } else {
+      document.getElementById('mensagem-erro').innerHTML = '';
+    }
+  }
+  
+  document.querySelector('.entrar').addEventListener('click', validarFormulario);
  
