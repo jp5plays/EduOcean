@@ -18,13 +18,19 @@
 
   body {
     font-family: "Rubik", sans-serif;
-    background-color: var(--light-blue);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#img{
+    margin-left: 50px;
+    position: fixed; /* Fixar no canto superior esquerdo */
+    top: 10px; /* Distância do topo */
+    left: 10px;
 }
 
 .container {

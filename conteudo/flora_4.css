@@ -13,6 +13,7 @@ body{
 }
 main{
     display: flex;
+    margin-inline: auto;
    
 }
 .conteiner{
@@ -116,3 +117,4 @@ main{
   #s{
     width: 20px;
   }
+
