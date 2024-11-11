@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 100%;
+    position: fixed;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+   
+background-color: #101728;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 500px;
+}
+
+form input{
+    width: 600px;
+    height: 60px;
+    background-color: #101728;
+    border: 1px solid grey;
+}
+
+
+
+a{
+    color: red;
+}
+
